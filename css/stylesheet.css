@@ -19,9 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #000000;
-    opacity: 0.8;
-    height: 50px;
     margin-bottom: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
     z-index: 10;
 }
 
@@ -43,7 +45,6 @@ header {
 
 .nav ul {
     list-style: none;
-    color: #ffffff;
     text-align: center;
 }
 
@@ -53,11 +54,39 @@ header {
 
 .nav a {
     display: block;
+    color: #ffffff;
+    text-decoration: none;
     line-height: 50px;
     padding: 0 16px;
     transition: all 0.4s;
 }
 
-.nav a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+.nav a:active, .nav a:hover {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: hotpink;
+}
+
+main {
+    background-image: url("../images/black-computer-keyboard.jpg");
+    background-size: 100% auto;
+    height: 600px;
+    color: white;
+    /* text-align: center; */
+    padding: auto 0;
+    margin-top: 50px;
+    position: relative;
+}
+
+main .container {
+    position: relative;
+    top: 500px;
+    left: 100px;
+}
+
+main h1, main h2 {
+    opacity: 0.7;
+}
+
+.submain {
+    margin-top: 24px;
 }
